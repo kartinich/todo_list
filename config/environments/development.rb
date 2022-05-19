@@ -1,6 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  ENV["REDISTOGO_URL"] = 'redis://username:password@my.host:6789'
+
   config.session_store :cache_store
 
   # In the development environment your application's code is reloaded on
